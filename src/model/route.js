@@ -1,7 +1,7 @@
 const mongoose=require("mongoose");
 
 const routeSchema=new mongoose.Schema({
-     airline_name:{type:String,required:true,unique:true},
+     airline_name:{type:String,required:true},
      startAirport:{type:mongoose.Schema.ObjectId,ref:"Airport"},
      endingAirport:{type:mongoose.Schema.ObjectId,ref:"Airport"},
      cost:{type:Number,required:true},
